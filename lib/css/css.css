@@ -1,0 +1,117 @@
+.bdr{
+    border: 2px solid black;
+    padding: 0.1rem 0.3rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+.para-img{
+  position: fixed;
+  z-index: -1;
+  top:0;
+  left:0
+}
+
+.tp-div{
+  background: transparent;
+  height: 280px;
+  width: 100%
+}
+
+.bg-w{
+  background: white;
+}
+
+.head-box {
+    position: relative;
+}
+
+.head-txt {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .head-txt {
+    font-size: 2rem;
+  }
+}
+
+.pcard-height{
+  min-height: 450px;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+.gtxt{
+  color: green;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #369b36;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#post-header{
+  margin-bottom: 2rem;
+  margin-top: 2rem
+}
+
+#archive-all .card{
+  margin-bottom: 1rem;
+  border-color: #91ed91;
+}
+
+.mb-3{
+  margin-bottom: 3rem;
+
+}
+
+.mt-3{
+  margin-top: 3rem;
+}
+
+.mr-3{
+  margin-right: 3rem;
+}
+
+.recent-post-item{
+  padding: 1rem;
+    margin-bottom: 1rem;
+    border-color: #91ed91;
+}
+
+.post-tag.chip.badge a, .post-tag.chip.badge a:hover{
+  color: white!important;
+}
+.post-tag.chip.badge{
+  margin-left: .5rem;
+  background: green!important;
+}
+
+.ct-header{
+
+}
+
+.ctxt{
+  text-align: center;
+}
+
+.gf-logo{
+  border: 1px solid grey;
+border-radius: 4px;
+}
