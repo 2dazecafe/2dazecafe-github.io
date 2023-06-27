@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="./favicon.png">
 
     <link rel="stylesheet" href="./lib/css/bootstrap-icons.css">
 <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
@@ -58,9 +59,9 @@
         
       </ul>
       <div class="d-flex">
-        <i class="bi bi-facebook me-2 bdr"></i>
-        <i class="bi bi-instagram me-2 bdr"></i>
-        <i class="bi bi-envelope-fill me-2 bdr"></i>
+        <a href="https://www.facebook.com/2dazecafe" target="_blank" class=" me-2 bdr"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.facebook.com/2dazecafe" target="_blank" class=" me-2 bdr"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/2dazecafe" target="_blank" class=" me-2 bdr"><i class="bi bi-envelope-fill"></i></a>
       </div>
     </div>
   </div>
@@ -211,9 +212,10 @@
     <footer class="py-3 my-4">
       <div class="nav justify-content-center pb-3">
         <div class="d-flex text-muted">
-          <i class="bi bi-facebook me-4 bdr"></i>
-          <i class="bi bi-instagram bdr"></i>
-          <i class="bi bi-envelope-fill ms-4 bdr"></i>
+
+          <a href="https://www.facebook.com/2dazecafe" target="_blank" class=" me-2 bdr"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.facebook.com/2dazecafe" target="_blank" class=" bdr"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/2dazecafe" target="_blank" class=" ms-2 bdr"><i class="bi bi-envelope-fill"></i></a>
         </div>
       </div>
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -242,6 +244,36 @@
 
     <script src="./lib/js/bootstrap.min.js"></script>
 <script src="./lib/init.mjs" type="text/module"></script>
+<!-- Messenger Chat plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "100440666356282");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
   </body>
 </html>
